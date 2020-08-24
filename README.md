@@ -15,4 +15,5 @@ $$
 
 + [ ] Bugs
     - [x] ![](https://img.shields.io/badge/Fixed-green) 换行`\\`被转义成`\`，导致`\begin`块无法渲染 
-    - [ ] ![](https://img.shields.io/badge/Todo-red) 无法加载字体 
+    - [x] ![](https://img.shields.io/badge/Fixed-green) 无法加载字体 
+    - [ ] 大分数中间横丢失
