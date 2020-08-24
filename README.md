@@ -1,4 +1,4 @@
-# Tampermonkey | KaTeX_For_Github
+# Tampermonkey | KaTeX For Github
 A Tampermonkey script witch can render mathworks in the README.md
 
 ## 安装
