@@ -6,7 +6,7 @@ A Tampermonkey script witch can render mathworks in the README.md
 本脚本基于 [Tampermonkey](https://www.tampermonkey.net/) 浏览器插件，理论上适用于同类型其他插件
 
 当你已经装好了 Tampermonkey，点击下面的按钮安装此脚本    
-![点此安装](https://img.shields.io/badge/点此安装-green)
+[![点此安装](https://img.shields.io/badge/点此安装-green)](https://github.com/Philogag/Tampermonkey-KaTeX_For_Github/raw/master/KaTex%20for%20Github.user.js)
 
 > 如果你已经装好了脚本  
 > 刷新此页面后你将在下面看到漂亮的 LaTeX Logo  
