@@ -10,6 +10,7 @@
 
 // @require      https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.js
 // @require      https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/contrib/auto-render.min.js
+// @require      https://cdn.bootcdn.net/ajax/libs/webfont/1.6.28/webfontloader.js
 
 // @grant        unsafeWindow
 // @grant        GM_addStyle
@@ -17,8 +18,17 @@
 // ==/UserScript==
 
 function loadResource(){
-    GM_addStyle(GM_getResourceText('KaTeX_Css'))
-   // GM_addStyle('.katex .mathdefault {font-style: normal;}');
+    WebFont.load({
+        custom: {
+            families: ['KaTeX_AMS', 'KaTeX_Caligraphic:n4,n7', 'KaTeX_Fraktur:n4,n7',
+                       'KaTeX_Main:n4,n7,i4,i7', 'KaTeX_Math:i4,i7', 'KaTeX_Script',
+                       'KaTeX_SansSerif:n4,n7,i4', 'KaTeX_Size1', 'KaTeX_Size2', 'KaTeX_Size3',
+                       'KaTeX_Size4', 'KaTeX_Typewriter'],
+        },
+    });
+    var css_str = GM_getResourceText('KaTeX_Css');
+    css_str = css_str.replace(/url\(fonts/g, "url(https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/fonts") // fix font
+    GM_addStyle(css_str);
 }
 
 function fixNewLineOnBeginBlocks(){
