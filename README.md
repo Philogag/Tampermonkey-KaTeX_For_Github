@@ -1,28 +1,16 @@
-# Tampermonkey | KaTeX For Github
-A Tampermonkey script witch can render mathworks in the README.md
+
+# TamperMonkey Scripts
+
+一些自己编写的油猴脚本。
 
 ## 安装
 
-本脚本基于 [Tampermonkey](https://www.tampermonkey.net/) 浏览器插件，理论上适用于同类型其他插件
+基于 [Tampermonkey](https://www.tampermonkey.net/) 浏览器插件，理论上适用于同类型其他插件
 
-当你已经装好了 Tampermonkey，点击下面的按钮安装此脚本    
-[![点此安装](https://img.shields.io/badge/点此安装-green)](https://github.com/Philogag/Tampermonkey-KaTeX_For_Github/raw/master/KaTex%20for%20Github.user.js)
+## 脚本列表
 
-> 如果你已经装好了脚本  
-> 刷新此页面后你将在下面看到漂亮的 LaTeX Logo  
-> $$
-\LaTeX
-$$
+|                      |                    功能                    | 下载 |
+| :------------------: | :----------------------------------------: | :--: |
+| [KaTeX For Github]() | 为Github的Readme.md添加KaTex数学公式渲染。 |      |
+|    [Ad Remover]()    |  移除百度、bing等搜索引擎结果中的广告块。  |      |
 
-
-## Functions
-
-+ [x] 基本渲染
-    + [x] 行内公式 `$\LaTeX$`  
-    + [x] 行间公式 `$$\LaTeX$$`
-    + [ ] Preview Changes Page
-
-+ [ ] Bugs
-    - [x] ![](https://img.shields.io/badge/Fixed-green) 换行`\\`被转义成`\`，导致`\begin`块无法渲染 
-    - [x] ![](https://img.shields.io/badge/Fixed-green) 无法加载字体 
-    - [ ] 大分数中间横丢失
